@@ -5,64 +5,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Havana's Croqueta</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <link rel="stylesheet" href="styles-footbridge.css">
+    <link rel="stylesheet" href="styles-payment.css">
+    <link rel="stylesheet" href="styles-nav.css">
 
 </head>
 <body>
     
     <header>
-        <div class="container">
+        <div id="footbridge">
+            <!-- <video controls autoplay source class="media"src="Media/pizza.mp4" type="video/mp4"></video> -->
             <nav>
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <img id="logo" src="logo.png" alt="">
+                <div href="#" class="nav-tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill nav-icon" viewBox="0 0 16 16">
+                        <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                    </svg>
+                    <span class="nav-icon-description disabled">Home</span>
+                </div>
+                <div href="menu.html" class="nav-tab selected">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-app nav-icon" viewBox="0 0 16 16">
+                        <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                    <span class="nav-icon-description disabled">Menu</span>
+                </div>
+                <div href="about.html" class="nav-tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill nav-icon" viewBox="0 0 16 16" class="nav-icon">
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                    </svg>
+                    <span class="nav-icon-description disabled">About</span>
+                </div>
+                <div href="contact.html" class="nav-tab">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-plus nav-icon" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        <path fill-rule="evenodd" d="M12.5 1a.5.5 0 0 1 .5.5V3h1.5a.5.5 0 0 1 0 1H13v1.5a.5.5 0 0 1-1 0V4h-1.5a.5.5 0 0 1 0-1H12V1.5a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                    <span class="nav-icon-description disabled">Contact</span>
+                </div>
             </nav>
+            <img class="background-image"src="Media/footbridge-2.png" alt="">
+
+
+            <!-- <svg width="3rem" height="3rem" viewBox="0 0 24 24" fill="yellow" xmlns="http://www.w3.org/2000/svg" id="arrow-icon">
+                <path d="M8 11L12 15M12 15L16 11M12 15V3M7 4.51555C4.58803 6.13007 3 8.87958 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 8.87958 19.412 6.13007 17 4.51555" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> -->
+            <!-- <svg width="3rem" height="3rem" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"id="arrow-icon">
+                <path d="M12 4V20M12 20L8 16M12 20L16 16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg> -->
+
+            <div id="arrow-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+                  </svg>
+            </div>
         </div>
     </header>
 
-    <section class="banner">
-        <div class="container">
-            <h1>Havana's Croqueta</h1>
-            <p>Best Croquetas in Miami</p>
-        </div>
-    </section>
 
-    <section class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Our croquetas are made with the finest ingredients and are cooked to perfection. We have a variety of flavors to choose from. Come and try them all!</p>
-        </div>
-    </section>
+    <div id="main-content">
 
-    <section class="menu">
-        <div class="container">
-            <h2>Menu</h2>
-            <p>Choose from our variety of flavors</p>
-            <div class="menu-items">
-                <div class="menu-item">
-                    <h3>Ham Croqueta</h3>
-                    <img src="https://www.queixeriaprazadevigo.com/pub/media/wysiwyg/Cocinar_croquetas_de_queso.jpg" alt="Ham Croqueta">
-                    <p>Our classic ham croqueta</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Chicken Croqueta</h3>
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/receta-croquetas-jamon-ababol-elle-gourmet-6525195529f06.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="Chicken Croqueta">
-                    <p>Our delicious chicken croqueta</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Cod Croqueta</h3>
-                    <img src="https://hips.hearstapps.com/hmg-prod/images/receta-croquetas-elle-gourmet-6525251d14c63.jpg?crop=1xw:0.8439609902475619xh;center,top&resize=1200:*" alt="Cod Croqueta">
-                    <p>Our tasty cod croqueta</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Variety Croqueta</h3>
-                    <img src="https://detorregourmet.com/blog/wp-content/uploads/2017/05/croquetasdesabores.jpg" alt="Variety Croquetas">
-                    <p>Here is a try of our master home-made croquetas variety</p>
-                </div>
+    
+    
+        <section class="banner">
+            <div class="container">
+                <h1>Havana's Croqueta</h1>
+                <p>One of the only places where you can find cuban 🇨🇺 food in Canada 🇨🇦</p>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <section class="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Our croquetas are made with the finest ingredients and are cooked to perfection. We have a variety of flavors to choose from. Come and try them all!</p>
+            </div>
+        </section>
+    
+        <section class="menu">
+            <!-- <div class="container"> -->
+                
+                <h2>Menu</h2>
+                <p>Choose from our variety of flavors</p>
+    
+    
+    
+                <!-- HTML -->
+                <div class="carousel-container">
+                      
+                    <div class="offer-carousel">
+                        <div class="offer-item">
+                        <span class="offer-name">5 small boxes or more | ♨</span>
+                        <img src="https://www.queixeriaprazadevigo.com/pub/media/wysiwyg/Cocinar_croquetas_de_queso.jpg" alt="offer 1" class="offer-image">
+                    </div>
+                    <!-- <div class="offer-item">
+                        <span class="offer-name">From 10 to 20 small boxes | ♨</span>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/receta-croquetas-jamon-ababol-elle-gourmet-6525195529f06.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="offer 2" class="offer-image">
+                    </div> -->
+                    <div class="offer-item">
+                        <span class="offer-name">Party size | ♨ / 🧊</span>
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/receta-croquetas-elle-gourmet-6525251d14c63.jpg?crop=1xw:0.8439609902475619xh;center,top&resize=1200:*" alt="offer 3" class="offer-image">
+                    </div>
+                    <div class="offer-item">
+                        <span class="offer-name">King size | 🧊</span>
+                        <img src="https://detorregourmet.com/blog/wp-content/uploads/2017/05/croquetasdesabores.jpg" alt="offer 4" class="offer-image">
+                    </div>
+                    <!-- Agrega más ofertas según sea necesario -->
+                </div>
+            <!-- </div> -->
+      
+                
+            <div class="payment-container">
+
+                <button id="pay-button" class="boton-pay">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                    </svg> 
+                    <span>Pay</span> -->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-style" viewBox="0 0 16 16">
+                        <path d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm8 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-4 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm8 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-4-4a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    <span>Order</span>
+                </button>
+                <ul class="menu-list">
+                    
+                    <li class="menu-item">
+                        <img class="item-image" src="https://cdn.sanity.io/images/czqk28jt/prod_plk_us/92570c2e82064999815b887b6789034ea0e6cc92-2000x1333.png?q=80&auto=format" alt="Ham Croqueta">
+                        <div>
+                            <a href="#"><span class="item-title">Ham Croqueta</span></a>
+                            <p>Our classic ham croqueta</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img class="item-image" src="https://cdn.sanity.io/images/czqk28jt/prod_plk_us/310729f163ed30f9e5c073a5ed0ac9db1ee8a15e-870x570.png?q=80&auto=format" alt="Chicken Croqueta">
+                        <div>
+                            <a href="#"><span class="item-title">Chicken Croqueta</span></a>
+                            <p>Our delicious chicken croqueta</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img class="item-image" src="https://cdn.sanity.io/images/czqk28jt/prod_plk_us/97af7c8e70c0ec7c38571005f2591ba2100cc1cd-2000x1333.png?q=80&auto=format" alt="Cod Croqueta">
+                        <div>
+                            <a href="#"><span class="item-title">Cod Croqueta</span></a>
+                            <p>Our tasty cod croqueta</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img class="item-image" src="https://cdn.sanity.io/images/czqk28jt/prod_plk_us/b80c50f75fbc606b70162203fdb5deddbd7b158d-2000x1333.png?q=80&auto=format" alt="Variety Croquetas">
+                        <div>
+                            <a href="#"><span class="item-title">Variety Croqueta</span></a>
+                            <p>Here is a try of our master home-made croquetas variety</p>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <div style="height: 80px;">
+
+                </div>
+            </div>    
+        </section>
+    </div>
     <script src="script.js"></script>
+    <script src="menu_interaction.js"></script>
 </body>
 </html>
