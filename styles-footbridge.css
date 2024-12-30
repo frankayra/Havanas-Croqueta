@@ -1,0 +1,79 @@
+:root{
+    --dark-gradient-background: linear-gradient(rgba(0, 0, 0, 0.342),   #333 90%);
+}
+
+
+
+#footbridge{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+
+    /* height: 250px; */
+    height: 100vh;
+    margin: -8px;
+    background-color: rgb(34, 34, 34);
+
+
+    text-align: center;
+    /* justify-content: center; */
+    align-items: center;
+    
+    /* background-image: url('Media/footbridge-2.png'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;  */
+    
+    
+    .background-image{
+        height: 90vh;
+        position: absolute;
+        z-index: 0;
+        margin: auto;
+        
+    }
+    #arrow-icon{
+        position: absolute;
+        bottom: 80px;
+        left: 20%;
+        transform: translateX(-50%);
+        z-index: 1;
+        color: var(--gold-offer);
+        animation: up-down 1s infinite;
+    }
+
+   
+   
+   
+   /* ::after{
+       background: var(--dark-gradient-background);
+       content: '';
+       position: absolute;
+       inset: 0;
+    } */
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(17px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+  
+
+
+
+#top-section {
+    height: 97vh;
+    border: 1px solid var(--orange);
+}

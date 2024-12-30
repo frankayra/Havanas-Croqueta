@@ -1,0 +1,45 @@
+nav{
+    position: sticky;
+    top: 0;
+    /* left: 0; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: 100vw;
+    z-index: 1;
+    *{
+        z-index: 1;
+    }
+    .nav-tab{
+        text-decoration: none;
+        color: white;
+        padding: 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: 0.2s;
+        
+    }
+    .nav-icon{
+
+    }
+    .nav-icon-description{
+
+    }
+    .disabled{
+        display: none;
+
+    }
+    .selected{
+        background-color: var(--green-active);
+        color: white;
+        box-shadow: 0 0 5px 5px var(--green-active);
+        border-radius: 7px;
+    }
+
+}

@@ -1,0 +1,108 @@
+
+:root{
+    --green-active: #19c713de;
+    --green-hover: #218838;
+    --green-background: #f8f9fa;
+    --blue-background: rgb(16, 21, 29);
+    --orange: #ffc26e;
+}
+
+#pay-button{
+    
+    position: sticky;
+    top: 90vh;
+    left: 100vw;
+    /* margin: 1rem; */
+    background-color: var(--green-active);
+    background-color: #28a745;
+    background-color: #007bff;
+    background-color: #0056b3;
+    background-color: #ff9800;
+    background-color: #c82333;
+    background-color: #ffca28;
+    background-color: #333333;
+    background-color: var(--blue-background);
+    color: #333;
+    color: var(--orange);
+    color: white;
+    
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    z-index: 1;
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.boton-pay {
+    /* background: radial-gradient(circle, #ff005a, #ffcc00, #00ffcc, #ff005a); */
+    /* animation: cambiarDegradado 8s infinite alternate; */
+    overflow: hidden;
+    
+}
+
+.boton-pay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 1000%;
+    background: radial-gradient(circle, #ff005a, #ffcc00);
+    /* background: conic-gradient(
+      from 0deg,
+      #ff005a,
+      #ff00d4,
+      #00ffcc,
+      #ff005a
+    ); */
+
+    animation: moverFondo 5s ease infinite;
+    z-index: -1;
+    /* animation: cambiarDegradado 8s ease-in-out infinite; */
+
+
+    /* animation: moverOndas 8s ease infinite;
+    mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"%3E%3Cpath d="M0,10 Q25,0 50,10 T100,10 V20 H0 Z" fill="%23fff"/%3E%3C/svg%3E');
+    -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 20"%3E%3Cpath d="M0,10 Q25,0 50,10 T100,10 V20 H0 Z" fill="%23fff"/%3E%3C/svg%3E');
+    mask-size: 150px 50px;
+    -webkit-mask-size: 150px 50px; */
+
+    
+    /* mask-repeat: repeat; */
+    /* -webkit-mask-repeat: repeat; */
+  }
+
+  
+
+/* Animación de movimiento de las ondas */
+@keyframes moverOndas {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverFondo {
+    0% { transform: translate3d(0, 0, 0); }
+    25% { transform: translate3d(-50%, -40%, 0); }
+    50% { transform: translate3d(-60%, -80%, 0); }
+    75% { transform: translate3d(-20%, -10%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+

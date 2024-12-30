@@ -1,0 +1,231 @@
+:root{
+    --dark-background-color: #333;
+    --dark-gradient-background: linear-gradient(rgba(0, 0, 0, 0.342),   #333 90%);
+    --darker-gradient-background: linear-gradient(#333, rgb(36, 36, 36));
+    --dark-font-color: rgb(255, 255, 255);
+    --footer-background: linear-gradient(#ffffff00 , #333 0%, rgb(36, 36, 36));
+
+
+
+
+    --blue-background: rgb(16, 21, 29);
+    --blue-card: rgb(22, 31, 44);
+    --orange: #ffc26e;
+    --gold: #fce566;
+    --gold-offer: rgb(245, 172, 15);
+    --green: rgb(23, 184, 119);
+    --green-transparent: rgba(23, 184, 119, 0.95);
+    --green-active: #19c713de;
+    --grey-active: #d0ced4;
+    --grey-unactive: #8f8f8f;
+    --blue-link: rgb(37, 166, 233);
+    --violet: rgb(137, 100, 232);
+
+    --dark-background: #131313;
+    --highlight-background: var(--gold);
+    --highlight-font-color: var(--blue-background);
+}
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c;
+    color: greenyellow;
+    /* margin: 10px 40px; */
+    padding: 0;
+}
+/* Negro y azul neon */
+body{
+    font-family: Arial, sans-serif;
+    background-color: #ebebeb;
+    color: rgb(31, 31, 31);
+    /* margin: 10px 40px; */
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #2c2c2c;
+    /* margin: 10px 40px; */
+    padding: 0;
+}
+
+
+#main-content{
+    position: relative;
+}
+
+#logo{
+    height: 60px;
+}
+
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    max-width: 600px;
+    margin: auto;
+
+    padding: 1rem;
+  
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #fff;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        transition: transform 0.7s;
+
+        a {
+            /* text-decoration: none; */
+            color: inherit;
+        }
+    }
+    .menu-item.in-cart{
+        /* border-left: 5px solid #19c713; */
+        box-shadow: -5px 0 0 0 var(--green);
+        /* box-shadow: 0 0 1px 0 #808080; */
+        transform: translateX(5px);
+    }
+    
+    
+    .item-image {
+        /* width: 80px; Ajusta el tamaño según lo necesites */
+        /* height: 80px; */
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+        border-radius: 8px;
+        margin-right: 1rem; /* Espacio entre la imagen y el nombre */
+    }
+    
+    .item-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+    .cart-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .add-to-cart {
+        background-color: #4CAF50; /* Green */
+        background-color: #333;
+        background-color: #f44336; /* Red */
+        background-color: #28a745;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        transition: background-color 0.3s;
+    }
+    .remove-from-cart {
+        background-color: #f44336; /* Red */
+        background-color: #333;
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0;
+        transition: background-color 0.3s;
+    }
+}
+
+
+
+
+
+
+  /* Carusell */
+  /* Contenedor para el carrusel con fondo fijo */
+.carousel-container {
+    position: relative;
+    padding: 1rem;
+    background-image: url('ruta-de-la-imagen-de-fondo.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-attachment: fixed; /* Imagen de fondo fija */
+    background-position: center;
+  }
+.offer-carousel {
+    display: flex;
+    overflow-x: auto; /* Activa el desplazamiento horizontal */
+    gap: 1rem; /* Espacio entre cada producto */
+    padding: 1rem;
+    scroll-snap-type: x mandatory; /* Facilita el desplazamiento fluido de cada elemento */
+    scrollbar-width: none; /* Firefox */
+
+  ::-webkit-scrollbar { /* Chrome, Safari y Edge */
+    display: none;
+  }
+  
+  .offer-item {
+    display: flex;
+    align-items: center;
+    /* padding: 1rem; */
+    padding-left: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto; /* Evita que los elementos se reduzcan para mantener el tamaño fijo en el carrusel */
+    scroll-snap-align: center; /* Alinea cada elemento en el centro al hacer scroll */
+    justify-content: space-between;
+    transition: transform 0.3s;
+    min-width: 200px; /* Ajusta el ancho mínimo de cada producto en el carrusel */
+    overflow: hidden;
+  }
+  
+  
+  .offer-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-right: 1rem; /* Espacio entre el nombre y la imagen */
+    max-width: 150px;
+  }
+  
+  .offer-image {
+    /* width: 80px; */
+    height: 80px;
+    object-fit: cover;
+    /* border-radius: 8px; */
+  }
+  
+  
+}
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+/* Moviles */
+
+@media (max-width: 768px){ 
+    
+}
